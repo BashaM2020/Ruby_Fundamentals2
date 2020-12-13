@@ -1,7 +1,7 @@
 def double(my_number)
-    puts my_number * 2
+    return my_number * 2
 end
 
-double(5)
-double(10)
-double(15)
+puts double(5)
+puts double(10)
+puts double(15)

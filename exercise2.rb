@@ -1,12 +1,12 @@
-def negative(number)
-    if number > 0
-        puts "Positive"
+def negative?(number)
+    if number < 0
+        return true
     else
-        puts "Negative"
+        return false
     end
 end
 
-negative (5)
-negative (-4)
+puts negative?(5)
+puts negative?(-4)
 negative (20)
 negative (-60)
