@@ -1,21 +1,26 @@
-puts "How far did Adam run (in metres)?"
-distance = gets.to_f
+puts "distance of A"
+distanceA = gets.chomp.to_f
+puts "minutes of A"
+timeA = gets.chomp.to_f
 
-puts "How many minutes did Adam run take to run #{distance} metres?"
-mins= gets.to_f
+puts "distance of B"
+distanceB = gets.chomp.to_f
+puts "minutes of B"
+timeB = gets.chomp.to_f
 
+puts "distance of C"
+distanceC = gets.chomp.to_f
+puts "minutes of C"
+timeC = gets.chomp.to_f
 
 def calculate_speed(distance, time)
-    seconds = mins * 60
-    return distance / seconds
+    return puts "Speed is #{distance}m" + "/" +  "#{time * 60}seconds"
 end
 
-calculate_speed(distance, mins)
 
-#to convert minutes into seconds just multiply mins * 60 seconds
-
-######### secs_of_A = mins_of_Adam * 60
-
-#Speed is mesured by this: Speed= distance(meters)/time(seconds)
-
-######### speed_of_A = distance_of_Adam/secs_of_A
+#Speed of A
+speedA = calculate_speed(distanceA, timeA)
+#Speed of B
+speedB = calculate_speed(distanceB, timeB)
+#Speed of C
+speedC = calculate_speed(distanceC, timeC)

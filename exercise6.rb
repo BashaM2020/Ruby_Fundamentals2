@@ -1,4 +1,4 @@
-puts "Please enter a temperature in Farenheit"
+puts "Please enter a temperature in Farenheit, with a decimal point for exact results"
 
 user_imput = gets.chomp.to_f
 
