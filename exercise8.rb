@@ -24,3 +24,5 @@ speedA = calculate_speed(distanceA, timeA)
 speedB = calculate_speed(distanceB, timeB)
 #Speed of C
 speedC = calculate_speed(distanceC, timeC)
+
+#!!!!Question2: Why can't I creat variables with my new method? the last codes on this page don't work?

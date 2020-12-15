@@ -8,3 +8,5 @@ def temp_in_F(user_imput)
 end
 
 puts temp_in_F(user_imput)
+
+#!!!! Question 1: how do I get my answered rounded or to only have one number after the decimal point?
