@@ -41,7 +41,7 @@
 
 # #in Booleans, == and !=, give you a true or false, but && and || only give you the answer of the first equation, why?
 
-# #Variables
+# #Variables give data peices a name
 # protagonist= "super man"
 # antagonist= "bad man"
 # secondary_charachter= "lightning boy"
@@ -65,6 +65,10 @@
 
 # puts "Don't forget the number, it's #{secret_code}"
 
+# #secret_code -= 1
+
+# puts secret_code
+
 # puts "#{secret_code + 4}"
 # puts secret_code + 20
 # puts secret_code
@@ -84,7 +88,7 @@
 # puts "He made #{people}"
 # puts "#{people} are male and female, #{man} is masculine and #{woman} is feminine."
 
-# days_of_creation = 6.5
+days_of_creation = 6.5
 
 # puts "some say the world was actually made in #{days_of_creation} days"
 
@@ -99,10 +103,11 @@
 
 # days_of_creation = days_of_creation.to_s
 
-# puts "#{days_of_creation}"
+# puts "#{days_of_creation} + 6 "
 
 # days_of_creation = days_of_creation.to_i
-
+# puts "#{days_of_creation + 6} " #here the +6 is added bc its an integer!
+# puts "#{days_of_creation} + 6 "
 # puts days_of_creation + 10
 
 # puts days_of_creation + 10.0
@@ -111,7 +116,8 @@
 # num = 9
 # puts num == 9
 
-# #Flow Control Structures
+# #Flow Control Structures, 
+#CONDITIONAL STATEMENTS... THESE USE ==,!=,>,<,>/,\<
 
 # puts "Please enter the three digit code we just texted you!"
 
@@ -145,8 +151,21 @@
 #     puts "color not found!"
 # end
 
-# #Loops
-# #did we do list iteration??
+# #Loops HAVE WHILE AND UNTIL
+#1) SET UP A VARIABLE=PEICE OF DATA.
+#2) HOW MANY TIMES DO YOU WANT THIS VARIABLE TO BE LOOPED? 
+# IN ***LOOPS*** WE USE += AS A SIGN FOR (((((((((NUM_OF_TIMES_FOR_THIS_VARIABLE_TO_BE_LOOPED)))))))
+#                            VARIABLE += 5
+#                 THIS TELLS US YOU WANT TO LOOP IT FIVE TIMES
+#3) DO YOU WANT TO LOOP IT EVERYTIME THE MSG IS TRUE (==)? ------> than use, while
+#              ''                    THE MSG IS FALSE (!=)? -----> than use, until
+#4) MAKE A TRUE OR FALSE STATEMENT FOR YOUR WHILE OR UNTIL USING ==,!=,>,<
+#5) YOU CAN ADD A PUTS STATEMENT FOR EVERY TIME THE LOOP RUNS
+#6) NOW ADD YOUR VARIABLE += 5
+#7) AND END!!!!!!!
+
+
+
 # number_protector= 0
 
 # while number_protector < 6
@@ -155,6 +174,9 @@
 # end
 
 # number_protector = 0
+
+#UNTIL THE WRONG NUM IS WRONG === WONT WORK!! SO YOU HAVE TO SAY
+#UNTIL THE WRONG NUM IS ==TRUE PUTS...
 
 # until number_protector == 9
 #     puts "This is not nine #{number_protector}"
@@ -173,6 +195,105 @@
 # end
 
 # robo("Adam","Eve")
+
+# def give_total(first, second)
+    # first = number_of_cats
+    # second = number_of_dogs
+    #we don't need to assign variables here or at all the 
+    #arguments are just place holders
+    # # puts "thanks for using this method"
+#     sum = first + second
+#     return sum
+# end
+#^ here we are setting up a "rocket to launch", we're giving 
+# instuctions for the variables are are coming next, and will lauch off!
+# number_of_cats = 35
+# number_of_dogs = 25
+
+# puts give_total(number_of_cats, number_of_dogs)
+
+# total_number_of_pets = give_total(number_of_cats, number_of_dogs)
+
+# puts total_number_of_pets
+
+# puts "please enter your name"
+# girlname = gets.chomp
+
+# def basic_q(user_name) 
+#     puts "Hello, #{user_name} please enter your three digit code below"
+# end
+
+# puts "Hello, #{girlname} please enter your three digit code"
+# when we call our method, we can change the argument
+# either by typing in a specific value or calling on an old value
+# a gets.chomp answer can be a value, and this value can be called on
+
+# basic_q ("#{girlname}")
+
+#======================================================================================
+
+# def make_burger(bun, toppings, cheese, patty)
+#     #defining the burger!
+#     burger = ""
+#     #why is this empty?
+#     burger += bun + "\n"
+#     burger += toppings
+#                                 #adding a option!
+#                                 if cheese
+#                                 burger += "/////\n"
+#                                 end
+#     burger += patty + "\n"
+    
+
+#     burger += bun
+#     puts "Making burger..."
+    
+# return burger
+# end
+
+#   def get_toppings(pickle, onion)
+#     toppings = ""
+#     if pickle
+#       toppings += "~~~\n"
+#     end
+#     if onion
+#       toppings += "^^^^^\n"
+#     end
+#     return toppings
+#   end
+
+
+# def to_bool(my_ans)
+#     if my_ans == 'true'
+#         return true
+#     elsif my_ans == 'false'
+#         return false
+#     end
+# end
+
+#   puts "Do you want onion toppings ?"
+#   my_answer1 = gets.chomp 
+#   onion = to_bool(my_answer1) 
+
+#   puts "Do you want pickle toppings ?"
+#     my_ans2 = gets.chomp
+#   pickle = to_bool(my_ans2)
+
+#   puts " Do you want cheese in the burger ?"
+#   my_ans3 = gets.chomp
+#   cheese = to_bool(my_ans3)
+
+#   my_toppings = get_toppings(pickle, onion)
+#   puts make_burger(' --- ', '=====', cheese, my_toppings)
+
+
+
+
+
+
+
+
+
 
 
 

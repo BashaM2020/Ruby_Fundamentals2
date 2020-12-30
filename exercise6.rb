@@ -7,6 +7,4 @@ def temp_in_F(user_imput)
    return (user_imput - 32) / 1.8
 end
 
-puts temp_in_F(user_imput)
-
-#!!!! Question 1: how do I get my answered rounded or to only have one number after the decimal point?
+puts temp_in_F(user_imput).round(2)
